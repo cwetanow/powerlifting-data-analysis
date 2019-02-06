@@ -1,4 +1,6 @@
-﻿using PowerliftingPredictor.Core;
+﻿using System;
+using System.Linq;
+using PowerliftingPredictor.Core;
 using PowerliftingPredictor.Core.Utils;
 using PowerliftingPredictor.Models;
 
@@ -10,22 +12,25 @@ namespace PowerliftingPredictor.CLI
 		{
 			var helper = new DataHelper();
 
-			var (results, meets) = helper.LoadData(@"../../../Data/openpowerlifting.csv");
+			var (results, meets) = helper.LoadData(@"./Data/openpowerlifting.csv");
 
 			var expectedResult = new MeetResult {
 				Sex = "M",
 				Equipment = "Raw",
-				Division = "Men Junior 20-23",
+				Division = "Juniors",
 				WeightClass = "105",
 				Total = 585,
 				Age = 23,
-				Bodyweight = 98
+				Bodyweight = 98,
+				Squat = 220,
+				Bench = 125,
+				Deadlift = 240
 			};
 
-			var prediction = new PredictionService()
+			var (place, percentile) = new PredictionService()
 				.PredictPlace(expectedResult, results);
 
-			System.Console.WriteLine(prediction);
+			System.Console.WriteLine($"Place {place}, Percentile {percentile * 100:F2}%");
 		}
 	}
 }
