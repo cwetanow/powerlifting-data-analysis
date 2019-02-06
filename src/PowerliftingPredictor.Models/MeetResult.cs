@@ -42,13 +42,13 @@
 				Place = place
 			};
 
-			result.Age = !string.IsNullOrEmpty(age) ? double.Parse(age.Replace('.', ',')) : (double?)null;
-			result.Bodyweight = !string.IsNullOrEmpty(bodyweight) ? double.Parse(bodyweight.Replace('.', ',')) : (double?)null;
-			result.Squat = !string.IsNullOrEmpty(squat) ? double.Parse(squat.Replace('.', ',')) : (double?)null;
-			result.Bench = !string.IsNullOrEmpty(bench) ? double.Parse(bench.Replace('.', ',')) : (double?)null;
-			result.Deadlift = !string.IsNullOrEmpty(deadlift) ? double.Parse(deadlift.Replace('.', ',')) : (double?)null;
-			result.Total = !string.IsNullOrEmpty(total) ? double.Parse(total.Replace('.', ',')) : (double?)null;
-			result.Wilks = !string.IsNullOrEmpty(wilks) ? double.Parse(wilks.Replace('.', ',')) : (double?)null;
+			result.Age = !string.IsNullOrEmpty(age) ? double.Parse(age) : (double?)null;
+			result.Bodyweight = !string.IsNullOrEmpty(bodyweight) ? double.Parse(bodyweight) : (double?)null;
+			result.Squat = !string.IsNullOrEmpty(squat) ? double.Parse(squat) : (double?)null;
+			result.Bench = !string.IsNullOrEmpty(bench) ? double.Parse(bench) : (double?)null;
+			result.Deadlift = !string.IsNullOrEmpty(deadlift) ? double.Parse(deadlift) : (double?)null;
+			result.Total = !string.IsNullOrEmpty(total) ? double.Parse(total) : (double?)null;
+			result.Wilks = !string.IsNullOrEmpty(wilks) ? double.Parse(wilks) : (double?)null;
 
 			return result;
 		}
