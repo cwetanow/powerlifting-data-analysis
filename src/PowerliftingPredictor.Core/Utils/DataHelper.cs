@@ -1,10 +1,8 @@
 ﻿using LumenWorks.Framework.IO.Csv;
 using PowerliftingPredictor.Models;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace PowerliftingPredictor.Core.Utils
 {
@@ -37,32 +35,6 @@ namespace PowerliftingPredictor.Core.Utils
 
 				return results;
 			}
-		}
-
-		private async Task LoadMeets(string filePath, IDictionary<int, Meet> meets)
-		{
-			var reader = new StreamReader(filePath);
-
-			var line = await reader.ReadLineAsync();
-
-			while (true)
-			{
-				line = await reader.ReadLineAsync();
-
-				if (string.IsNullOrEmpty(line))
-				{
-					break;
-				}
-
-				var meet = ParseMeet(line);
-
-				meets.Add(meet.MeetId, meet);
-			}
-		}
-
-		private Meet ParseMeet(string stringifiedMeet)
-		{
-			return null;
 		}
 	}
 }
