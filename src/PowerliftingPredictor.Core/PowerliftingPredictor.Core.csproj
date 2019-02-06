@@ -8,4 +8,12 @@
     <Folder Include="Utils\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="LumenWorks.Framework.IO" Version="3.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PowerliftingPredictor.Models\PowerliftingPredictor.Models.csproj" />
+  </ItemGroup>
+
 </Project>
