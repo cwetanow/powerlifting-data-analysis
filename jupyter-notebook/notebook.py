@@ -94,30 +94,3 @@ for i in range(len(equipment_types)):
     plt.title('Deadlift Lifting Capacity by Gender - ' + equipment_types[i])
 
 plt.show()
-
-# violin plots for age and bodyweight by gender for every equipment category
-equipment_types = data['Equipment'].unique()
-feature_names = ['Age','BodyweightKg']
-
-for i in range(len(equipment_types)):
-    plt.figure(i, figsize = (20,15))
-    
-    data_equipment = data[data['Equipment'] == equipment_types[i]]
-    
-    plt.subplot(1,2,1)
-    plt.ylim(0,100)
-    sns.violinplot(data = data_equipment, x = 'Sex', y = 'Age',hue = 'Sex', scale = 'count',dodge = True, palette = ['#e54370','#0093b7'])
-    plt.style.use("fast")
-    plt.title('Age by Gender - ' + equipment_types[i])
-    plt.xlabel('Gender')
-    plt.ylabel('Age')
-
-    plt.subplot(1,2,2)
-    plt.ylim(0,300)
-    plt.style.use("fast")
-    sns.violinplot(data = data_equipment, x = 'Sex', y = 'BodyweightKg',hue = 'Sex',scale = 'count',dodge = True, palette = ['#e54370','#0093b7'])
-    plt.xlabel('Gender')
-    plt.ylabel('BodyweightKg')
-    plt.title('BodyweightKg by Gender - ' + equipment_types[i])
-
-plt.show()
