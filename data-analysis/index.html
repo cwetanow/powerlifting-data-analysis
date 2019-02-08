@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="">
+  <meta name="author"
+        content="">
+
+  <title>Анализ на данните</title>
+
+  <link href="css/bootstrap.min.css"
+        rel="stylesheet">
+
+  <link href="css/styles.css"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="sidebar-wrapper">
+    <ul class="list-group sidebar-nav">
+      <li>
+        <a href="#raw-header"
+           class="list-group-item navigation-btn active">Наблюдения относно безекипировъчен трибой</a>
+      </li>
+      <li>
+        <a href="#squat-bw"
+           class="list-group-item navigation-btn">Клек спрямо тегло</a>
+      </li>
+      <li>
+        <a href="#squat-age"
+           class="list-group-item navigation-btn">Клек спрямо възраст</a>
+      </li>
+      <li>
+        <a href="#bench-bw"
+           class="list-group-item navigation-btn">Лег спрямо тегло</a>
+      </li>
+      <li>
+        <a href="#bench-age"
+           class="list-group-item navigation-btn">Лег спрямо възраст</a>
+      </li>
+      <li>
+        <a href="#deadlift-bw"
+           class="list-group-item navigation-btn">Тяга спрямо тегло</a>
+      </li>
+      <li>
+        <a href="#deadlift-age"
+           class="list-group-item navigation-btn">Тяга спрямо възраст</a>
+      </li>
+      <li>
+        <a href="#total-bw"
+           class="list-group-item navigation-btn">Трибой спрямо тегло</a>
+      </li>
+      <li>
+        <a href="#total-age"
+           class="list-group-item navigation-btn">Трибой спрямо възраст</a>
+      </li>
+      <li>
+        <a href="#age-regression-lines"
+           class="list-group-item navigation-btn">Клек, лег, тяга спрямо възраст</a>
+      </li>
+      <li>
+        <a href="#bw-regression-lines"
+           class="list-group-item navigation-btn">Клек, лег, тяга спрямо тегло</a>
+      </li>
+      <li>
+        <a href="#equipment"
+           class="list-group-item navigation-btn">Постижения спрямо екипировка</a>
+      </li>
+    </ul>
+  </div>
+  <div class="container page-content">
+    <div class="thumbnail"
+         id="raw-header">
+      <div class="caption-full">
+        <h3>Наблюдения относно безекипировъчен трибой</h3>
+        <p>
+          Графиките, които съпоставят различните движения спрямо теглото и възрастта на състезателя се отнасят за състезателите без
+          екипировка.
+        </p>
+      </div>
+    </div>
+    <div class="thumbnail"
+         id="squat-bw">
+      <div class="caption-full">
+
+        <img src="img/squat-bw.png"
+             alt="structure"
+             class="image">
+
+        <p>
+          Очаквано постиженията на клек са по-високи при състезателите с по-голямо лично тегло. На графиката се вижда, че клека при
+          мъжете е по-висок спрямо този при жените
+        </p>
+      </div>
+    </div>
+
+    <div class="thumbnail"
+         id="squat-age">
+      <div class="caption-full">
+
+        <img src="img/squat-age.png"
+             alt="structure"
+             class="image">
+
+        <p>
+          С напредването на възрастта се забелязва спад в постиженията на клек и на двата пола, като при жените е по-ясно изразен.
+        </p>
+      </div>
+    </div>
+    <div class="thumbnail"
+         id="bench-bw">
+      <div class="caption-full">
+
+        <img src="img/bench-bw.png"
+             alt="structure"
+             class="image">
+
+        <p>
+          Постиженията на вдигането от лег се подобряват с покачване на лично тегло, като напредъка е доста по-осезаем при мъжете.
+        </p>
+      </div>
+    </div>
+    <div class="thumbnail"
+         id="bench-age">
+      <div class="caption-full">
+
+        <img src="img/bench-age.png"
+             alt="structure"
+             class="image">
+
+        <p>
+          Противно на очакванията, постиженията на вдигането от лег се подобряват с напредването на възрастта на съзтезателите.
+        </p>
+      </div>
+    </div>
+    <div class="thumbnail"
+         id="deadlift-bw">
+      <div class="caption-full">
+
+        <img src="img/deadlift-bw.png"
+             alt="structure"
+             class="image">
+
+        <p>
+          И при мъртвата тяга се наблюдава подобряване на постиженията при покачване на лично тегло. Както при другите движения, при
+          мъжете е по-ясно изразено подобряването.
+        </p>
+      </div>
+    </div>
+    <div class="thumbnail"
+         id="deadlift-age">
+      <div class="caption-full">
+
+        <img src="img/deadlift-age.png"
+             alt="structure"
+             class="image">
+
+        <p>
+          При мъртвата тяга се наблюдава запазване или много лек спад на постиженията при напредването на възрастта.
+        </p>
+      </div>
+    </div>
+    <div class="thumbnail"
+         id="total-bw">
+      <div class="caption-full">
+
+        <img src="img/total-bw.png"
+             alt="structure"
+             class="image">
+
+        <p>
+          Предвид факта, че на всичките движения се подобряват постиженията с покачване на лично тегло, е очаквано и трибоя да се покачи.
+          Интересно е, че при мъжете е доста по-силно изразено покачването на трибоя.
+        </p>
+      </div>
+    </div>
+    <div class="thumbnail"
+         id="total-age">
+      <div class="caption-full">
+
+        <img src="img/total-age.png"
+             alt="structure"
+             class="image">
+
+        <p>
+          Лявата графика показва, че трибоя се запазва, дори покачва в някои случай с възрастта при мъжете. При жените се забелязва
+          спад в постиженията.
+        </p>
+      </div>
+    </div>
+
+    <div class="thumbnail"
+         id="age-regression-lines">
+      <div class="caption-full">
+
+        <img src="img/age-regression-lines.png"
+             alt="structure"
+             class="image">
+
+        <p>
+          При съпоставянето на трите линии за клек, лег и тяга спрямо възрастта на състезателите се вижда по-ясно отношението на трите
+          движения във времето. От графиката за мъжете може да се предположи, че растежа на вдигането от лег може да компенсира
+          за спада в клека и това обяснява запазването (и лекото подобряване) на трибоя. При жените се забелязва много по-остър
+          спад в клека, докато прогреса на лега е минимален.
+        </p>
+      </div>
+    </div>
+
+    <div class="thumbnail"
+         id="bw-regression-lines">
+      <div class="caption-full">
+
+        <img src="img/bodyweight-regression-lines.png"
+             class="image">
+
+        <p>
+          Графиката за мъжете ясно показва, че при достатъчно високо лично тегло, клека може да надмине мъртвата тяга. Това обикновено
+          се обяснява със факта, че при натрупването на маса става по-трудно влизането в силна позиция за мъртвата тяга,
+          докато тази маса помага за стабилността при клека.При жените се наблюдава почти постоянна разлика между клека и
+          мъртвата тяга
+        </p>
+      </div>
+    </div>
+
+    <div class="thumbnail"
+         id="equipment">
+      <div class="caption-full">
+
+        <img src="img/raw.png"
+             class="image">
+        <p>
+          Графиката показва зависимостта за това клека да е по-нисък от тягата. При мъжете се наблюдава, че максималното постижение
+          на клек е над това на тяга. Този факт беше загатнат в графиката с линиите на регресия. Средното при вдигането от
+          лег на жените е почти двойно по-ниско при жените от това при мъжете.
+        </p>
+        <img src="img/wraps.png"
+             class="image">
+        <p>
+          При съзтезанията с бинтове за клек се наблюдава логично увеличение на клека, като средното постижение почти изравнява това
+          на тяга.
+        </p>
+        <img src="img/single.png"
+             class="image">
+        <p>
+          Най-голяма помощ от екипировката се получава при трикото за клек и блуза за лег. На база на това се наблюдава още по-голям
+          ръст на постиженията при тези две движения. Лежанката е доста по-близо до другите две движения при еднослойната
+          екипировка.
+        </p>
+        <img src="img/multi.png"
+             class="image">
+        <p>
+          При многослойната екипировка се наблюдава значително увеличение на постиженията при вдигането от лег, като максималното изпреварва
+          това на тягата. Средният клек също надвишава средната тяга. Интересното е, че максималният клек наближава 600кг.
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="javascript/jquery.min.js"></script>
+
+  <script src="javascript/bootstrap.min.js"></script>
+
+  <script src="javascript/script.js"></script>
+</body>
+
+</html>
